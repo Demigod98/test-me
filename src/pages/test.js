@@ -124,21 +124,21 @@ const links = [
   },
 ];
 
-const IndexPage = () => {
+const TestPage = () => {
   return (
     <main style={pageStyles}>
       <h1 style={headingStyles}>
-        Congratulations
+        Congratulations it's page 2
         <br />
         <span style={headingAccentStyles}>
           — you just made a Gatsby site! 🎉🎉🎉
         </span>
       </h1>
+      <Link to="/">Go to homepage</Link>
       <p style={paragraphStyles}>
         Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
         update in real-time. 😎
       </p>
-      <Link to="/test">Go to test page</Link>
       <ul style={listStyles}>
         <li style={docLinkStyle}>
           <a
@@ -175,6 +175,6 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default TestPage;
 
 export const Head = () => <title>Home Page</title>;
